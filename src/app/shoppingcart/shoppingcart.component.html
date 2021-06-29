@@ -1,0 +1,8 @@
+<h2>Shopping Cart</h2>
+<ul>
+        <div class="input-group" *ngFor="let game of shopList$ | async">
+            <div class="input-group" *ngIf="game.quantity!=0">
+            x{{game.quantity}} copies of {{game.name}}.
+            </div>
+        </div>
+</ul>
